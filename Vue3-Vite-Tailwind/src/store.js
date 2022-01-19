@@ -5,6 +5,7 @@ export const useStore = defineStore('main', {
         counter: 1,
         name: 'Eduardo',
         isAdmin: true,
+
         users: [{
             id: 1,
             name: 'qwe'
@@ -14,7 +15,9 @@ export const useStore = defineStore('main', {
         }, {
             id: 3,
             name: 'zxc'
-        }]
+        }],
+
+        searchResults: []
 
     }),
 
@@ -28,6 +31,9 @@ export const useStore = defineStore('main', {
     actions: {
         increment() {
             this.counter++
+        },
+        async searchUsers(searchText) {
+            // this.searchResults = await axios.get('/api/users', { params: { searchText }});
         }
     }
 })
