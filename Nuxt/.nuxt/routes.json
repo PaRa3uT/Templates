@@ -1,0 +1,30 @@
+[
+  {
+    "name": "about",
+    "path": "/about",
+    "component": "c:\\\\Users\\\\ARTARASOV\\\\Documents\\\\projects\\\\Template-Nuxt\\\\pages\\\\about.vue",
+    "chunkName": "pages/about",
+    "_name": "_815bcf52"
+  },
+  {
+    "name": "fun",
+    "path": "/fun",
+    "component": "c:\\\\Users\\\\ARTARASOV\\\\Documents\\\\projects\\\\Template-Nuxt\\\\pages\\\\fun.vue",
+    "chunkName": "pages/fun",
+    "_name": "_4ac4bdc9"
+  },
+  {
+    "name": "more-fun",
+    "path": "/more-fun",
+    "component": "c:\\\\Users\\\\ARTARASOV\\\\Documents\\\\projects\\\\Template-Nuxt\\\\pages\\\\more-fun\\\\index.vue",
+    "chunkName": "pages/more-fun/index",
+    "_name": "_7a043bb5"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "c:\\\\Users\\\\ARTARASOV\\\\Documents\\\\projects\\\\Template-Nuxt\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_41ec19c8"
+  }
+]
