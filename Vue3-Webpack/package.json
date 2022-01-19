@@ -1,0 +1,29 @@
+{
+  "name": "template-vue3",
+  "version": "1.0.0",
+  "description": "1. npm init (Инициализация проекта)\r 2. Установка пакетов\r     Пакеты собираемые в бандл:\r         npm install vue@next",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaRa3uT/Template-Vue3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PaRa3uT/Template-Vue3/issues"
+  },
+  "homepage": "https://github.com/PaRa3uT/Template-Vue3#readme",
+  "dependencies": {
+    "vue": "^3.2.20"
+  },
+  "devDependencies": {
+    "@vue/compiler-sfc": "^3.2.20",
+    "html-webpack-plugin": "^5.4.0",
+    "vue-loader": "^16.8.1",
+    "webpack": "^5.59.1",
+    "webpack-cli": "^4.9.1"
+  }
+}
