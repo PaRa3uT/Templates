@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import page_main from './page-main.vue';
 import page_1 from './page-1.vue';
 import page_2 from './page-2.vue';
+import page_3 from './page-3.vue';
 
 
 const routes = [{
@@ -18,6 +19,9 @@ const routes = [{
 }, {
     path: '/page2', 
     component: page_2
+}, {
+    path: '/page3', 
+    component: page_3
 }, {
     path: '/:pathMatch(.*)*', redirect: '/main'
 }];
