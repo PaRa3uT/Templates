@@ -47,10 +47,10 @@ export default {
             'to': '/page_iot_module_settings',
             'title': 'IoT Настройки устройства'
         }, {
-            'to': '/page_store',
+            'to': '/page_shop_product_list',
             'title': 'Магазин'
         }, {
-            'to': '/page_store_products',
+            'to': '/page_shop_product_page',
             'title': 'Товары'
         }, {
             'to': '/',
