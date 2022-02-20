@@ -160,6 +160,9 @@
                 console.log(store.counter)
             }
 
+            const counter_test = ref(0);
+            const increment_test = () => counter_test.value++;
+
             console.log(store.name);
 
             return {
@@ -169,7 +172,9 @@
                 getUserById,
                 increment,
                 open,
-                test
+                test,
+                counter_test,
+                increment_test
             }
         }
     }

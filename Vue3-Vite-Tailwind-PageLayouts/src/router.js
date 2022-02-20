@@ -4,14 +4,14 @@ import page_main from './page-main.vue';
 import page_1 from './page-1.vue';
 import page_2 from './page-2.vue';
 import page_3 from './page-3.vue';
-import page_spa from './pages/spa.vue';
-import page_dashboard from './pages/dashboard.vue';
-import page_iot_settings from './pages/iot_settings.vue';
-import page_landing from './pages/landing.vue';
-import page_news from './pages/news.vue';
-import page_resume from './pages/resume.vue';
-import page_shop_product_list from './pages/shop_product_list.vue';
-import page_shop_product_page from './pages/shop_product_page.vue';
+import page_spa from './pages/page-spa.vue';
+import page_dashboard from './pages/page-dashboard.vue';
+import page_iot_settings from './pages/page-iot_settings.vue';
+import page_landing from './pages/page-landing.vue';
+import page_news from './pages/page-news.vue';
+import page_resume from './pages/page-resume.vue';
+import page_shop_product_list from './pages/page-shop_product_list.vue';
+import page_shop_product_page from './pages/page-shop_product_page.vue';
 
 const routes = [{
     path: '/main',
