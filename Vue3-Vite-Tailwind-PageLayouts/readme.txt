@@ -21,6 +21,11 @@
         npm i -D tailwindcss
         npm i @tailwindcss/forms
 
+    TypeScript
+
+    SASS
+        npm i sass
+
     Linting:
         npm i -D eslint
         npm i -D eslint-plugin-vue

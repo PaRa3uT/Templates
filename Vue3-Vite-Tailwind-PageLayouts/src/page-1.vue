@@ -1,6 +1,65 @@
+<script setup lang="ts">
+    import { ref, toRefs, reactive, onMounted, computed } from 'vue';
+    import { storeToRefs } from 'pinia';
+    import { useStore } from '@/store';
+
+
+    interface AppInfo {
+        name: string,
+        slogan: string
+    };
+
+    const appInfo: AppInfo = reactive({
+        name: 'Counter',
+        slogan: 'an app you can count on'
+    });
+
+    const count = ref<number | null>(null);
+    const addCount = (num: number) => {
+        if (count.value !== null) {
+            count.value += num;
+        }
+    }
+    const nextCount = computed(() => {
+        if (count.value !== null) {
+            return count.value + 1;
+        }
+        return null;
+    })
+
+    const store = useStore();
+    const open = ref(false);
+    const test = ref<string | number>('2020')
+
+    console.log(store.name);
+
+    const { counter, name, doubleCount, getUserById } = storeToRefs(store);
+
+    const increment = () => {
+        console.log(open.value);
+        console.log('qwe');
+        store.increment();
+        console.log(store.counter)
+    }
+
+    const counter_test = ref(0);
+    const increment_test = () => counter_test.value++;
+
+    console.log(store.name);
+
+    onMounted(() => {
+        count.value = 'qwe';
+    })
+
+</script>
+
 <template>
     <div>
-    {{ test }}
+        <h1>{{ appInfo.name }}</h1>
+        <h2>{{ appInfo.slogan }}</h2>
+        {{ count }}
+        <button @click="addCount('asd')">add count</button>
+        {{ test }}
           <div class="container w-full max-w-7xl">
             <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl p-5 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
               <div class="flex flex-row items-center justify-between lg:justify-start">
@@ -137,45 +196,3 @@
 
     </div>
 </template>
-
-<script lang="ts">
-    import { ref, toRefs } from 'vue';
-    import { storeToRefs } from 'pinia';
-    import { useStore } from '@/store';
-
-    export default {
-        setup() {
-            const store = useStore();
-            const open = ref(false);
-            const test = ref<string | number>('2020')
-
-            console.log(store.name);
-
-            const { counter, name, doubleCount, getUserById } = storeToRefs(store);
-
-            const increment = () => {
-                console.log(open.value);
-                console.log('qwe');
-                store.increment();
-                console.log(store.counter)
-            }
-
-            const counter_test = ref(0);
-            const increment_test = () => counter_test.value++;
-
-            console.log(store.name);
-
-            return {
-                counter,
-                name,
-                doubleCount,
-                getUserById,
-                increment,
-                open,
-                test,
-                counter_test,
-                increment_test
-            }
-        }
-    }
-</script>

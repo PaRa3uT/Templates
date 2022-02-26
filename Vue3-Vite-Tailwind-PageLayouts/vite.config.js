@@ -13,7 +13,7 @@ export default defineConfig({
             find: '@', replacement: path.resolve(__dirname, 'src')
         }]
     },
-    
+
     test: {
         // environment: 'jsdom'  // vitest
         runtimeEnv: 'dom',  // peeky
