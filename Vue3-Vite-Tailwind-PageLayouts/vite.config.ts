@@ -14,9 +14,9 @@ export default defineConfig({
         }]
     },
 
-    test: {
-        // environment: 'jsdom'  // vitest
-        runtimeEnv: 'dom',  // peeky
-    }
+//    test: {
+//        // environment: 'jsdom'  // vitest
+//        runtimeEnv: 'dom',  // peeky
+//    }
 
 })

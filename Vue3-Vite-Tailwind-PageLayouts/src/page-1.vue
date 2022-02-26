@@ -3,7 +3,6 @@
     import { storeToRefs } from 'pinia';
     import { useStore } from '@/store';
 
-
     interface AppInfo {
         name: string,
         slogan: string
@@ -24,7 +23,7 @@
         if (count.value !== null) {
             return count.value + 1;
         }
-        return null;
+        return 1;
     })
 
     const store = useStore();
@@ -48,7 +47,7 @@
     console.log(store.name);
 
     onMounted(() => {
-        count.value = 'qwe';
+        count.value = 0;
     })
 
 </script>
@@ -58,7 +57,7 @@
         <h1>{{ appInfo.name }}</h1>
         <h2>{{ appInfo.slogan }}</h2>
         {{ count }}
-        <button @click="addCount('asd')">add count</button>
+        <button @click="addCount(nextCount)">add count</button>
         {{ test }}
           <div class="container w-full max-w-7xl">
             <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl p-5 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">

@@ -138,7 +138,7 @@
                     </div>
                     <div class="relative">
                         <div class="flatpickr-wrapper">
-                            <input class="form-input pl-9 text-gray-500 hover:text-gray-600 font-medium focus:border-gray-300 w-60 flatpickr-input" value="" type="text" readonly="readonly">
+                            <input class="form-input pl-9 text-gray-500 hover:text-gray-600 font-medium focus:border-gray-300 w-60 flatpickr-input" value="" type="text" readonly />
                             <div class="flatpickr-calendar rangeMode animate static" tabindex="-1">
                                 <div class="flatpickr-months">
                                     <span class="flatpickr-prev-month">
