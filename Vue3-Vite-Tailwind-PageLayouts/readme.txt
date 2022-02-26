@@ -21,7 +21,11 @@
         npm i -D tailwindcss
         npm i @tailwindcss/forms
 
-    TypeScript
+    TypeScript:
+        npm i -D vue-tsc
+        npm i -D @vue/tsconfig
+        npx vue-tsc --noEmit
+        npx vue-tsc --noEmit && vite build
 
     SASS
         npm i sass

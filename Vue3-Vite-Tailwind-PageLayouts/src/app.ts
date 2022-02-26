@@ -1,4 +1,3 @@
-import type {} from './';
 import { createApp } from 'vue';
 import { createPinia } from 'pinia';
 
