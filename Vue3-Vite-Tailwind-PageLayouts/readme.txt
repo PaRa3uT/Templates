@@ -2,12 +2,12 @@
 2. Install packages:
     Vite:
         npm i -D vite
-        npm i -D @vitejs/plugin-vue
         *npm i -D vite-plugin-pwa (https://vite-plugin-pwa.netlify.app/guide/#installation)
         *npm i -D vite-plugin-linter (https://bitbucket.org/unimorphic/vite-plugin-linter/src/master/)
 
     Vue3 (Composition API):
         npm i vue@next
+        npm i -D @vitejs/plugin-vue
 
         Pinia (Store):
             npm i pinia
@@ -36,7 +36,7 @@
         npx eslint src --ext .vue,.js
 
     Testing:
-        * Vitest (Unit Testing) (Не работает)
+        * Vitest (Unit Testing) (ГЌГҐ Г°Г ГЎГ®ГІГ ГҐГІ)
             npm i -D vitest
             npm i -D jsdom
             npm i -D c8 (coverage)
