@@ -1,0 +1,22 @@
+{
+  "name": "clean-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^3.2.33",
+    "vuetify": "^3.0.0-beta.1"
+  },
+  "devDependencies": {
+    "@mdi/js": "^6.6.96",
+    "@vitejs/plugin-vue": "^2.3.2",
+    "@vuetify/vite-plugin": "^1.0.0-alpha.10",
+    "vite": "^2.9.8",
+    "vuetify-loader": "^2.0.0-alpha.9"
+  }
+}
