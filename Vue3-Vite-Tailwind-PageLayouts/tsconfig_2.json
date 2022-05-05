@@ -1,0 +1,20 @@
+{
+    "compillerOptions": {
+        "target": "esnext",
+        "module": "esnext",
+        "lib": ["dom", "dom.iterable", "esnext"],
+        "strict": true,
+        "allowJs": true,
+        "noImplicitAny": false,
+        "isolatedModules": true,
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "baseUrl": "./",
+        "paths": {
+            "@/*": ["./src"]
+        },
+    },
+    "include": ["env.d.ts", "src/*.ts", "src/**/*.ts", "src/**/*.vue"],
+    "exclude": ["node_modules"],
+}
